@@ -15,9 +15,7 @@ def encrypt(word):
     word = list(word[::-1])
     
     for i in range(len(word)):
-        
         if word[i] in vowels:
-            
             word[i] = vowels[word[i]]
     
     return "".join(word) + "aca"
