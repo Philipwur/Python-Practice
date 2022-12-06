@@ -10,7 +10,4 @@ def is_disarium(n):
     for i in range(len(x)):
         y += int(x[i]) ** (i + 1)
     
-    if n == y:
-        return True
-    else:
-        return False
+    return n == y
