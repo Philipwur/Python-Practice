@@ -73,14 +73,8 @@ def is_match(s : str, p : str) -> bool:
 
 print(is_match("aaab", "a*bc"))
 
-# pattern has two active conditions, mem and pointer
-# a * updates the memory function and pointer moves on to the next char
-# if memory is used to validate char, nothing updates in terms of pointers
-# if pointer is used to validate char, there is a check for * and previous cache 
-# is removed
 
-# j is pointer and cache is * point
-
+# we need some kind of checking for the len to avoid having to use try
 
 #steps
 # 1. is the p a *
