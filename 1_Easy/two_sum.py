@@ -10,7 +10,7 @@ and you may not use the same element twice.
 
 You can return the answer in any order.
 """
-
+#brute force
 class Solution:
     
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -24,3 +24,6 @@ class Solution:
                 
 #for large matrices it would be time efficient to add a function to get rid of 
 #numbers larger than target
+
+# try doing this with a hash table
+# https://leetcode.com/problems/two-sum/solutions/127810/official-solution/
