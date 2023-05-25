@@ -36,12 +36,31 @@ class Solution:
                 else:
                     return [Lp, Rp]
                 
+
+#hash table solution, scales worse because it doesnt make use of structure of data
+# for some reason leetcode wants +1 on all numbers
+
+class Solution2:
+    
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+    
+        seen = {}
+        
+        for i, value in enumerate(nums):
+            
+            if target - value in seen:
+                return [seen[target - value] + 1, i + 1]
+            
+            seen[value] = i
+                
+                
+                
 #%%
 
-nums = [3,2,4]
-target = 6
+nums = [2,7,11,15]
+target = 9
 
-test = Solution().twoSum(nums, target)
+test = Solution2().twoSum(nums, target)
         
 print(test)
         
