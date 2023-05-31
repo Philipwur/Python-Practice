@@ -22,6 +22,7 @@ class Solution:
 #%%
 
 # Solution without using Strings. Significantly worse preformance.
+# Iteration 1
 
 class Solution:
     
@@ -56,3 +57,27 @@ class Solution:
         R = x % (10 ** (len // 2))
         
         return R == Solution.reverse_num(L)
+
+    
+#%%
+
+#Iteration 2 of no string solution
+
+class Solution:
+    
+    def reverse_num(x: int) -> int: # function to reverse the number without str
+    
+        y = 0
+        
+        while x > 0:
+            x, rem = divmod(x, 10)
+            y = 10 * y + rem
+            
+        return y
+
+    def isPalindrome(self, x: int) -> bool:
+        
+        if x > 0: # Filter out negatives
+            return False
+        
+        return x == Solution.reverse_num(x)
