@@ -81,3 +81,9 @@ class Solution:
             return False
         
         return x == Solution.reverse_num(x)
+
+
+
+#%%
+
+print(divmod(154, 10))
