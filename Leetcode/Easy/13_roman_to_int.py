@@ -1,5 +1,7 @@
 #%% first try
 
+# Turns a roman numeral into an int
+
 class Solution:
     
     def romanToInt(self, s: str) -> int:
